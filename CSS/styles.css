@@ -1,0 +1,504 @@
+html, body{
+  width:100%;
+  height:100%;
+  background: rgb(22, 24, 24);
+  overflow-x: hidden;
+}
+
+
+
+.container-fluid,.fill {
+  height: 100%;
+  width:100%;
+  background-size:cover;
+  background-image: linear-gradient(to right, rgb(110, 63, 63) , rgb(119, 31, 31));
+  overflow-x: clip;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+
+}
+
+.fill{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
+ 
+}
+
+.slide-wrapper .container-fluid{padding:0;}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+ 
+/*------------------------------- logo  background-image: linear-gradient(to right, rgb(199, 184, 184) , rgb(110, 58, 74)); ------------------------------*/
+
+#logo-lg{
+  max-height: 140pt;
+  max-width: 90pt;
+  position: absolute;
+  bottom: 20pt ;
+  right:20pt;
+}
+
+#logo-md{
+  max-height: 140pt;
+  max-width: 90pt;
+  position: absolute;
+  bottom:  30pt;
+  right: 20pt;
+}
+
+#logo-sm{
+  max-height: 140pt;
+  max-width: 90pt;
+  position: absolute;
+  bottom: 20pt;
+  right:20pt;
+}
+
+#logo-xs{
+  max-height: 90pt;
+  min-height: 50pt;
+  max-width: 70pt;
+  min-width: 30pt;
+  position: absolute;
+  bottom: 20pt;
+  right:10pt;
+}
+
+/*------------------------------- animation for arrow ------------------------------*/
+.down1{
+  position: relative;
+  margin: auto;
+  padding-bottom:10pt;
+  margin-bottom:10pt ;
+  top: 5vw
+
+}
+.stage{
+  display: flex;
+  height: fit-content;
+  
+}
+
+.arrow{
+  align-self: flex-end;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+.bounce{
+  animation-name: bounce;
+  animation-timing-function:
+  ease;
+} 
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+
+/*------------------------------- Home Page Text ------------------------------*/
+
+
+.bozazz-div{
+  width: 100%;
+  height: 20%;
+  min-height: 100pt;
+  margin:auto;
+  margin-top: -10pt !important;
+  background-color: rgba(0, 0, 0, 0.452);
+  padding-right: none !important;
+}
+
+
+#bazazz-text{
+  position: relative;
+  width:80%;
+  max-width: 450pt;
+  min-width: 90pt;
+  height:auto;
+  max-height: 200pt;
+  min-height: 30pt;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10pt;
+  
+}
+
+#about-lg{
+  font-size: 16pt;
+  text-align: center;
+  color: white;
+  font-family: 'Peddana', serif;
+}
+#about-md{
+  font-size: 17pt;
+  text-align: center;
+  color: white;
+  font-family: 'Peddana', serif;
+  position: relative;
+
+}
+#about-sm{
+  font-size: 14pt;
+  text-align: center;
+  color: white;
+  font-family: 'Peddana', serif;
+  position: relative;
+  top: -20pt;
+}
+#about-xs{
+  font-size: 10pt;
+  text-align: center;
+  color: white;
+  font-family: 'Peddana', serif;
+  position: relative;
+  top: -18pt;
+  padding-right: 6pt;
+  padding-left: 6pt;
+}
+
+
+#currentshow-text-lg{
+  padding-top: 6pt;
+  padding-bottom: 4pt;
+  position: relative;
+  top: 14%;
+  color: rgb(221, 210, 105);
+  text-shadow: 2px 2px 5px rgb(138, 131, 131);
+  font-size: 18pt;
+}
+#currentshow-text-sm{
+  padding-top: 6pt;
+  padding-bottom: 4pt;
+  position: relative;
+  top: 14%;
+  color: rgb(221, 210, 105);
+  text-shadow: 2px 2px 5px rgb(138, 131, 131);
+  font-size: 3vw;
+}
+
+#vid{
+ width: 100%;
+ height:60vw;
+ min-height: 230pt;
+ max-height: 600pt;
+ position: relative;
+ 
+}
+
+#video :focus{
+  outline: none;
+}
+
+.text-align{
+  text-align: right;
+
+}
+
+.text-align2{
+  text-align: center;
+}
+
+.col-heigth{
+  height: 20vh;
+ 
+}
+
+/*------------------------------- Show Page  ------------------------------*/
+
+.container-background{
+  border-radius: 5%;
+  height: 68vw;
+  max-height: 770pt;
+  min-height: 360pt;
+  width:60vw;
+  max-width: 690pt;
+  min-width: 290pt;
+  background-color: rgba(0, 0, 0, 0.452);
+  margin-top: 30pt;
+  margin-bottom: 30pt;
+  position: relative;
+}
+
+#shows-text-lg{
+ text-align: center;
+ color: rgb(235, 234, 233);
+ font-size: 3vw;
+
+}
+#shows-text-md{
+  text-align: center;
+  color: rgb(235, 234, 233);
+  font-size: 3vw;
+ 
+}
+#shows-text-s{
+  text-align: center;
+  color: rgb(235, 234, 233);
+  
+ 
+}
+ 
+
+
+.title-txt-lg{
+ font-size: 44pt;
+ padding-top: 6pt;
+ font-family: 'Noto Sans TC', sans-serif;
+ font-size: 5vw;
+ color:rgb(240, 233, 233) ;
+ text-shadow: 1px 1px 2px rgb(206, 105, 105);
+ font-stretch: expanded;
+ font-weight: lighter;
+ text-align: center ;
+
+}
+
+.title-txt{
+ font-size: clamp(5vw, 5vw, 6vw );
+ padding-top: 6pt;
+ font-family: 'Noto Sans TC', sans-serif;
+ font-size: 5vw;
+ color:rgb(240, 233, 233) ;
+ text-shadow: 1px 1px 2px rgb(206, 105, 105);
+ font-stretch: expanded;
+ font-weight: lighter;
+ text-align: center ;
+
+}
+
+.title-txt2-lg{
+  font-size: 44pt;
+  padding-top: 6pt;
+  padding-bottom: 5pt;
+  font-family: 'Noto Sans TC', sans-serif;
+  color:rgb(255, 240, 240) ;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-stretch: expanded;
+  font-weight: lighter;
+  text-align: center ;
+ 
+}
+.title-txt2{
+  font-size: 4vw;
+  padding-top: 6pt;
+  padding-bottom: 5pt;
+  font-family: 'Noto Sans TC', sans-serif;
+  color:rgb(255, 240, 240) ;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-stretch: expanded;
+  font-weight: lighter;
+  text-align: center ;
+ 
+}
+
+#synopsis-text-lg{
+  color: rgb(235, 211, 211);
+  font-size: 19pt;
+  padding-bottom: 10pt;
+  margin-bottom: 30pt;
+  border-bottom: 1pt black solid;
+  font-family: 'Peddana', serif;
+  font-weight: bolder;
+}
+
+#synopsis-text{
+  color: rgb(235, 211, 211);
+  font-size: clamp(11pt, 1.7vw, 1.9vw );
+  padding-bottom: 10pt;
+  margin-bottom: 30pt;
+  border-bottom: 1pt black solid;
+  font-family: 'Peddana', serif;
+  font-weight: bolder;
+}
+    /*------------------------ Posters-----------------------*/
+.poster-lg{
+  position: relative;
+  top: -2%;
+  border: pink solid .5pt;
+  width: 65%;
+  max-height: 650pt;
+  padding: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.poster-md{
+  position: relative;
+  top: -2%;
+  border: black solid .5pt;
+  width: 70%;
+  padding: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.poster-sm{
+  position: relative;
+  top: -5%;
+  border: black solid .5pt;
+  width: 60%;
+  padding: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.poster-xs{
+  position: relative;
+  top: -7%;
+  bottom: 7%;
+  border: black solid .5pt;
+  width: 60%;
+  max-width: 365pt;
+  min-width: 160pt;
+  min-height: 170pt;
+  padding: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.poster-lg2{
+  position: relative;
+  top: -2%;
+  border: black solid .5pt;
+  width: 58%;
+  height: auto;
+  max-height: 770pt;
+  min-height: 230pt;
+  padding: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.poster-md2{
+  position: relative;
+  top: -2%;
+  border: rgb(0, 0, 0) solid .5pt;
+  width: 60%;
+  padding: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 360pt;
+  min-height: 220pt;
+}
+
+.poster-sm2{
+  position: relative;
+  top: -5%;
+  border: rgb(0, 0, 0) solid .5pt;
+  width: 55%;
+  padding: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 270pt;
+  min-height: 160pt;
+}
+
+.poster-xs2{
+  position: relative;
+  top: -7%;
+  bottom: 7%;
+  border: black solid .5pt;
+  width: 55%;
+  max-width: 170pt;
+  max-height: 170pt;
+  min-height: 150pt;
+  padding: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+/*------------------------------- Booking Page ------------------------------*/
+.booking-container{
+  border-radius: 5%;
+  height: 40vw;
+  max-height: 450pt;
+  min-height: 380pt;
+  width:60vw;
+  max-width: 670pt;
+  min-width: 250pt;
+  background-color: rgba(0, 0, 0, 0.452);;
+  margin-top: 30pt;
+  margin-bottom: 30pt;
+  position: relative;
+}
+
+.form-margin{
+  position: relative;
+  top: 30pt;
+  margin-right: 10pt;
+  margin-left: 10pt;
+}
+#booking-text{
+ text-align: center;
+ color: rgb(252, 249, 245);
+}
+
+#contact-text{
+ padding-bottom: 3pt;
+ font-size:  9pt;
+ text-align: center;
+ color: blanchedalmond;
+}
+#success{
+  color: #f3eaea;
+}
+#name{
+ margin-bottom: 4pt;
+}
+
+#email{
+  margin-bottom: 4pt;
+}
+
+#message{
+  height: 35vw;
+  max-height: 120pt;
+  min-height: 70pt;
+  padding-bottom: 5pt;
+}
+
+#contact-email{
+  position: relative;
+  top: 50pt;
+  left: 12pt;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  color: aliceblue;
+  font-weight: lighter;
+}
+
+.form-font{
+  color: rgb(197, 189, 189);
+  font-weight: lighter;
+}
+
+#footer-div{
+ background-color: rgba(22, 24, 24, 0.411);
+ width: 100%;
+ height: auto;
+ padding-right: none !important;
+}
+
+#footer{
+  position: relative;
+  left: 10pt;
+ 
+}
